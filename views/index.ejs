@@ -13,6 +13,8 @@
   <form method="post" action="/item/add">
     <label for="name">Name</label>
     <input type="text" name="name">
+    <label for="name">Id</label>
+    <input type="text" name="id">
     <input type="submit" value="Add">
   </form>
   <h4>Items:</h4>
@@ -20,6 +22,9 @@
     <% items.forEach(function(item) { %>
       <li>
         <%= item.name %>
+      </li>
+       <li>
+        <%= item.id %>
       </li>
       <% }); %>
   </ul>
